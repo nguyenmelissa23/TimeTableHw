@@ -10,10 +10,65 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<!--jQuery link -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.2/firebase.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
     <title>Employee Time Sheet</title>
 </head>
 <body>
     
+    <div class="wrapper">
+        <div class="container jumbotron text-center">
+            <h1>Anytime is Train Time</h1>
+            <p>Choo chooo</p>
+        </div>
+
+        <div class="container ">
+            <header class="panel-heading">Current Train Schedule</header><br>
+	        <table class="table table-bordered" id="train-table">
+                <thead class="text-center">
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+	        </table>
+        </div>
+        
+        <div class="container">
+            <header class="panel-heading">Add Train</header><br>
+            <div class="form-group">
+                <label for="name">Train Name</label> <br>
+                <input type="text" name="name">
+            </div>
+
+            <div class="form-group">
+                <label for="destination">Destination</label> <br>
+                <input type="text" name="destination">
+            </div>
+
+            <div class="form-group">
+                <label for="first-time">First Train Time (HH:mm - military time)</label> <br>
+                <input type="text" name="firstTrainTime">
+            </div>
+
+            <div class="form-group">
+                <label for="frequency">Frequency (min)</label> <br>
+                <input type="text" name="frequency">
+            </div>
+
+	        <input class="btn btn-primary" type="submit" name="submit" value="Submit">
+            <br>
+
+        </div>
+        
+    </div>
 
     <!--Local JS file-->
     <script type="text/javascript" src="assets/javascript/logic.js"></script>

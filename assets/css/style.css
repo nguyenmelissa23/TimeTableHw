@@ -1,0 +1,24 @@
+header {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+    border: 5px;
+    margin: 0 -15px 0 -15px;
+    font-size: 22px;
+}
+
+.jumbotron{
+    background-color: blue;
+}
+
+.container{
+    background-color: #c9d4e2;
+    border: 3px blue solid;
+}
+
+label{
+    font-weight: bold;
+    color: black;
+
+}
+
